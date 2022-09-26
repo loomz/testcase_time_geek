@@ -13,9 +13,7 @@ def test_02(name, age, gender, birth):
     print("name=%s, age=%s, gender=%s, birth=%s" % (name, age, gender, birth))
 
 
-@pytest.mark.parametrize('name,age,gender', CommonReadFile().get_data_json_arr('test_json_array.json'))
-def test_03(name, age, gender):
-    print("name=%s, age=%s, gender=%s" % (name, age, gender))
+
 
 
 if __name__ == '__main__':

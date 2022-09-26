@@ -16,7 +16,7 @@ class CommonReadFile(object):
             row_arr = []
             for col in range(cols):  # 遍历列
                 col_data = sheet.cell_value(row, col)  # 获取单元格的值
-                col_type = sheet.cell_type(row, col) # 数据类型
+                col_type = sheet.cell_type(row, col)  # 数据类型
                 print("col_value=%s, col_type=%s" % (col_data, col_type))
                 row_arr.append(col_data)
             lit.append(row_arr)
@@ -34,7 +34,7 @@ class CommonReadFile(object):
                 my_data.append(row)
             return my_data
 
-    def get_data_json(self,file_json):
+    def get_data_json(self, file_json):
         with open(file_json, encoding="utf-8") as f:
             lit = []
             keys = json.load(f)
