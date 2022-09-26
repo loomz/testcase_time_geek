@@ -11,9 +11,13 @@ def get_data_json(file_json):
         return lit
 
 
-@pytest.mark.parametrize("name,email,pwd,pwd_", get_data_json('testE.json'))
-def test_case( name, email, pwd, pwd_):
-    assert pwd == pwd_
+@pytest.mark.parametrize("name,email,pwd,pwd_,result", get_data_json('testE.json'))
+def test_case(name, email, pwd, pwd_, result):
+    if result == "True":
+        assert pwd == pwd_
+    else:
+        assert pwd != pwd_
+
 
 
 if __name__ == '__main__':

@@ -1,6 +1,7 @@
 import xlrd
 import json
 import csv
+import yaml
 
 
 class CommonReadFile(object):
@@ -42,4 +43,10 @@ class CommonReadFile(object):
                 lit.append(tuple(key.values()))
             return lit
 
-
+    def get_data_yaml(self, file_name):
+        data = []
+        with open(file_name, encoding="utf-8") as f:
+            dict_data = yaml.safe_load(f.read())
+            for i in dict_data:
+                data.append(tuple(dict_data[i].values()))
+        return data
