@@ -34,18 +34,12 @@ class CommonReadFile(object):
                 my_data.append(row)
             return my_data
 
-    def get_data_json(self, file_json, keys):
+    def get_data_json(self,file_json):
         with open(file_json, encoding="utf-8") as f:
             lit = []
             keys = json.load(f)
             for key in keys:
-                lit.append(key)
+                lit.append(tuple(key.values()))
             return lit
 
-    def get_data_json_arr(self, file_json):
-        with open(file_json) as f:
-            lit = []
-            data = json.load(f)
-            for row in data:
-                lit.append(row)
-            return lit
+
