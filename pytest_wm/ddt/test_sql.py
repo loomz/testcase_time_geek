@@ -5,7 +5,7 @@ conn = MySQLdb.connect(
     usr='root',
     passwd='root',
     host='192.168.3.189',
-    port=3354,
+    port=3306,
     db='testing_db'
 )
 

@@ -1,0 +1,9 @@
+# 创建数据库
+create database testing_db;
+use testing_db;  打开数据库
+create  table user_tb1(id int primary key auto_increment,username varchar(20),pwd varchar(20));
+select * from  user_tb1
+desc user_tb1;
+insert into  user_tb1 (username,pwd)values('cat','345');
+select * from user_tb1;
+select  id,username,pwd from user_tb1;

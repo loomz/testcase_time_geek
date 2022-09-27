@@ -1,9 +1,4 @@
-[
-  {"name":"", "email":"","pwd":"", "pwd_":"123456","result": "False"},
-  {"name":"DADDAA", "email":"lzzoz@126.com","pwd":"12346", "pwd_":"123456","result": "False"},
-  {"name":"", "email":"lzzoz@126.com","pwd":"123456", "pwd_":"123456","result": "True"},
-  {"name":"admin", "email":"lzzoz@126.com","pwd":"123456", "pwd_":"123456","result": "True"},
-  {"name":"zxcv", "email":"","pwd":"123456", "pwd_":"123456","result": "True"},
-  {"name":"replace", "email":"342342232@qq.com","pwd":"123456", "pwd_":"123456","result": "True"},
-  {"name":"split", "email":"342342232@qq.com","pwd":"", "pwd_":"123456","result": "False"}
-]
+{
+  "key": ["tinam","aaa","ccccc"],
+  "key1": ["qqqq","aaa","ccccc"]
+}
