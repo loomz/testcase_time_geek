@@ -23,4 +23,4 @@ def test_yaml(username, age, pwd, pwd_, result):
         assert pwd != pwd_
 
 if __name__ == '__main__':
-    pytest.main(['-sv','test_case.py'])
+    pytest.main(['-sv', 'test_case.py'])

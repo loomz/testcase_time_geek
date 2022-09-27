@@ -2,12 +2,12 @@ case01:
   "username" :  "loomz"
   "age" :  36
   "pwd" : "123456"
-  "pwd_" :  "1234566"
+  "pwd_" :  "123456"
   "result": "True"
 
 case02:
   "username" :  "loomz2"
   "age" :  33
   "pwd" : "123456"
-  "pwd_" :  "123456"
-  "result": "True"
+  "pwd_" :  "12345"
+  "result": "False"

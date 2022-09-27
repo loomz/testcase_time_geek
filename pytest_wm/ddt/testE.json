@@ -1,4 +1,9 @@
-{
-  "key": ["tinam","aaa","ccccc"],
-  "key1": ["qqqq","aaa","ccccc"]
-}
+[
+  {"name":"", "email":"", "pwd":"12346", "pwd_":"123456", "result":"False"},
+  {"name":"DDDDD", "email":"lzzoz@126.com", "pwd":"12356", "pwd_":"123456", "result":"False"},
+  {"name":" ", "email":"lzzoz@126.com", "pwd":"123456", "pwd_":"123456", "result":"True"},
+  {"name":"admin", "email":"lzzoz@126.com", "pwd":"123456", "pwd_":"123456", "result":"True"},
+  {"name":"abcd", "email":"", "pwd":"123456", "pwd_":"123456", "result":"True"},
+  {"name":"replace", "email":"lzzoz@126.com", "pwd":"123456", "pwd_":"123456", "result":"True"},
+  {"name":"split", "email":"lzzoz@126.com", "pwd":" ", "pwd_":"123456", "result":"False"}
+]
