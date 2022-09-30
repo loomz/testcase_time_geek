@@ -2,11 +2,11 @@ import MySQLdb
 import pytest
 
 conn = MySQLdb.connect(
-    usr='root',
-    passwd='root',
+    usr='user_db_ddt_test',
+    passwd='user_db_ddt_test',
     host='192.168.3.189',
     port=3306,
-    db='testing_db'
+    db='db_ddt_test'
 )
 
 
