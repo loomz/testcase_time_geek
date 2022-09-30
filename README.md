@@ -1,3 +1,5 @@
 # testcase_time_geek
 
-pip install mysqlclient
+# 生成依赖列表
+conda list -e > requirements.txt
+

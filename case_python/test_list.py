@@ -1,10 +1,5 @@
 import pytest
 
-
-@pytest.mark.xfail
-def test_xfail():
-    assert 1 == 2
-
 def test_extend():
     li = ['a', 'b', 'c']
     li.extend(['d', 'e', 'f'])
