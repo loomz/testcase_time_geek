@@ -25,18 +25,6 @@ class CommonReadFile(object):
         print(lit)
         return lit
 
-    def get_data_csv(self, file_csv):
-        # with opn 打开某文件 定义别名 f
-        with open(file_csv, encoding="utf-8") as f:
-            # 读取里面值
-            lst = csv.reader(f)
-            my_data = []
-            for row in lst:
-                if len(row) == 0:
-                    my_data.extend(row)
-                else:
-                    my_data.append(row)
-            return my_data
 
     def get_data_json(self, file_json):
         with open(file_json, encoding="utf-8") as f:
@@ -54,7 +42,7 @@ class CommonReadFile(object):
                 data.append(tuple(dict_data[i].values()))
         return data
 
-    def get_data_csv2(self, file_csv):
+    def get_data_csv(self, file_csv):
         # with opn 打开某文件 定义别名 f
         with open(file_csv, encoding="utf-8") as f:
             # 读取里面值
