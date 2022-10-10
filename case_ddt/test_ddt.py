@@ -22,5 +22,3 @@ def test_yaml(username, age, pwd, pwd_, result):
     else:
         assert pwd != pwd_
 
-if __name__ == '__main__':
-   pytest.main(['-sv', 'test_ddt.py'])
