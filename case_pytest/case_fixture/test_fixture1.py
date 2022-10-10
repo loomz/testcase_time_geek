@@ -7,7 +7,7 @@ def test_01():
     return(a, b)
 
 
-class TesNum:
+class TestNum:
     def test_02(self, test_01):
         a = test_01[0]
         b = test_01[1]

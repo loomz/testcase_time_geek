@@ -11,8 +11,9 @@ def test_01():
 def test_02():
     print("你是第二执行")
 
+
 @pytest.mark.usefixtures("test_02")
-class TesNum:
+class TestNum:
     def test_03(self, test_01):
         a = test_01[0]
         b = test_01[1]
@@ -20,5 +21,3 @@ class TesNum:
         print("断言成功")
 
 
-if __name__ == '__main__':
-    pytest.main(['-sv', 'test_fixture4.py'])

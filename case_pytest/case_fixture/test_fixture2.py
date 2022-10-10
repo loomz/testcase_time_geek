@@ -8,10 +8,11 @@ def test_01():
 
 
 @pytest.mark.usefixtures("test_01")
-class TesNum:
+class TestNum:
     def test_03(self, test_01):
         a = test_01[0]
         b = test_01[1]
         assert a < b
         print("断言成功")
+
 
