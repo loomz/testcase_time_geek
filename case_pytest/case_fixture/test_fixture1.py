@@ -1,5 +1,8 @@
 import pytest
 
+# 官方文档 https://docs.pytest.org/en/stable/explanation/fixtures.html#
+# 官方中文文档翻译 https://learning-pytest.readthedocs.io/zh/latest/doc/fixture/intro.html
+
 @pytest.fixture(scope="class")
 def test_01():
     a = 6
