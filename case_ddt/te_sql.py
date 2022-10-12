@@ -36,4 +36,4 @@ def test1(id, name, pwd):
 
 
 if __name__ == '__main__':
-    pytest.main(['-sv'])
+    pytest.main(['-sv', __file__])

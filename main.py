@@ -1,4 +1,6 @@
 import pytest
+
+
 if __name__ == '__main__':
     # 跑所有测试用例
     # pytest.main(['-sv'])
@@ -6,8 +8,9 @@ if __name__ == '__main__':
     # 执行某目录的测试用例
     # pytest.main(['-sv', "case_pytest/case_fixture"])
 
-    #执行某一个文件
-    # pytest.main(['-sv', "case_ddt/test_ddt.py"])
+    # 执行某一个文件
+    # pytest.main(['-sv', "case_wx/wx_test.py"])
+    pytest.main(['-sv', "--setup-show", "case_pytest/case_fixture/test_rename.py"])
 
     # 执行某一个测试用例的方法
     # pytest.main(['-sv', "case_ddt/test_ddt.py::test_yaml"])
@@ -16,4 +19,4 @@ if __name__ == '__main__':
     # pytest.main(['-sv',  "-m my_skip1"])
 
     # 执行不是这个标志的所有测试用例
-    pytest.main(['-sv',  "-m not my_skip1"])
+    # pytest.main(['-sv',  "-m not my_skip1"])
