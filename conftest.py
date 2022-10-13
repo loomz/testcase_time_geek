@@ -31,3 +31,14 @@ def fixture_class():
     print('\n 每个模块测试用例结束class===================>')
 
 '''
+
+
+@pytest.fixture(scope='session', name='lg')
+def login_and_loginout():
+    print("\n登录xxxxxx，获取token...")
+    token = '9999999'
+    yield token
+    print('\n退出登录####################')
+
+
+
