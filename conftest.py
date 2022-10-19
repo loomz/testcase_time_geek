@@ -30,8 +30,8 @@ def fixture_class():
     yield
     print('\n 每个模块测试用例结束class===================>')
 
-'''
 
+'''
 
 @pytest.fixture(scope='session', name='lg')
 def login_and_loginout():
