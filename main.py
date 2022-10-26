@@ -8,4 +8,4 @@ if __name__ == '__main__':
    # pytest.main(['-sv', '-m my_skip', 'case_pytest'])
    # pytest.main(['-sv', 'case_pytest'])
    # pytest.main(['-sv', 'case_python'])
-   pytest.main(['-svq', "case_pytest/test_yield.py"])
+   pytest.main(['-svq', "case_pytest2/test_csv_login.py"])

@@ -1,3 +1,3 @@
 url,body,expect
-http://localhost:5000/login,'{ "password":"admin","sex":"男","age":18 }','{ "message": { "username": "用户名不能为空" } }'
-http://localhost:5000/login,'{ "username":"wuya","sex":"男","age":18 }','{ "message": { "password": "账户密码不能为空" } }'
+http://localhost:5001/login,"{ ""username"":""admin"",""sex"":""男"",""age"":18 }","{ ""message"": { ""username"": ""用户名不能为空"" } }"
+http://localhost:5001/login,"{ ""username"":""wuya"",""sex"":""男"",""age"":18 }","{ ""message"": { ""password"": ""账户密码不能为空"" } }"
