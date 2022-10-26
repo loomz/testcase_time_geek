@@ -11,11 +11,11 @@ if __name__ == '__main__':
 
     # 执行某一个文件
     # pytest.main(['-sv', "--setup-show","case_wx/wx_test.py"])
-    # pytest.main(['-sv',  "case_pytest/test_mark.py"])
+    pytest.main(['-sv',  "case_python/test_one.py"])
 
     # 执行某一个测试用例的方法
     # pytest.main(['-sv', "case_ddt/test_ddt.py::test_yaml"])
-    pytest.main(['-sv', "case_ddt/test_ddt.py::test_json"])
+    #pytest.main(['-sv', "case_ddt/test_ddt.py::test_json"])
 
     # 执行某种标志测试用例
     # pytest.main(['-sv',  "-m my_skip1"])
